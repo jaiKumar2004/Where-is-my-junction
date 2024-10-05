@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Box -->
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search by image title..." onkeyup="filterImages()">
+
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <div class="image-card" data-title="Image 1">
+            <a href="https://www.google.co.in/maps/search/banglore+railway+station/@12.9828254,77.579877,17z?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/bang.jpg" alt="Image 1">
+            </a>
+            <p class="image-title">Banglore</p>
+        </div>
+
+        <div class="image-card" data-title="Image 2">
+            <a href="https://www.google.co.in/maps/search/chennai+railway+station/@13.084778,80.2663588,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/chennai.jpg" alt="Image 2">
+            </a>
+            <p class="image-title">Chennai</p>
+        </div>
+
+        <div class="image-card" data-title="Image 3">
+            <a href="https://www.google.co.in/maps/search/coimbathore+railway+station/@11.0079927,76.953496,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/covai.jpg" alt="Image 3">
+            </a>
+            <p class="image-title">Coimbathore</p>
+        </div>
+
+        <div class="image-card" data-title="Image 4">
+            <a href="https://www.google.co.in/maps/search/dindugal+railway+station/@10.3528133,77.9809274,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/dindugal.jpeg" alt="Image 4">
+            </a>
+            <p class="image-title">Dindugal</p>
+        </div>
+
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/place/Erode+Junction/@11.3286028,77.7232242,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba96f132da794ef:0x34213a37eae28736!8m2!3d11.3286028!4d77.7257991!16s%2Fm%2F03d8nwj?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/erode.jpg" alt="Image 5">
+            </a>
+            <p class="image-title">Erode</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/karur+Junction/@10.9657078,78.0826938,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/karur.jpg" alt="Image 5">
+            </a>
+            <p class="image-title">Karur</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/place/Mumbai+Junction/@19.214938,72.8095981,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7b72c190a0adb:0x366038cf8cc18fed!8m2!3d19.214938!4d72.812173!16s%2Fg%2F11rfp_29y2?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/mumbai.jpg" alt="Image 5">
+            </a>
+            <p class="image-title">Mumbai</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/place/NILGIRIS+RAILWAY+JUNCTION+(COVAI+LIMITED)/@11.4326683,76.2571362,10z/data=!4m10!1m2!2m1!1snilgri+Junction!3m6!1s0x3ba8bd91495bd0ff:0xa12db3f10b243d16!8m2!3d11.4056562!4d76.696417!15sChBuaWxnaXJpIEp1bmN0aW9uWhIiEG5pbGdpcmkganVuY3Rpb26SAQtwYXJraW5nX2xvdJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSa2FtVnRZV3BuUlJBQuABAA!16s%2Fg%2F11v13xj6rj?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/nilgri.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Nilgir</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/salem+Junction/@11.6704512,78.1109869,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/salem.jpg" alt="Image 5">
+            </a>
+            <p class="image-title">Salem</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/tanjore+Junction/@10.7784671,79.136244,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/tanjore.jpg" alt="Image 5">
+            </a>
+            <p class="image-title">Tanjore</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/place/Tiruchirappalli+Railway+Station/@10.8116175,78.6729053,14z/data=!4m10!1m2!2m1!1strichy+Junction!3m6!1s0x3baaf53dfe399c2f:0xc0cece1b68318d1b!8m2!3d10.794165!4d78.6853262!15sCg90cmljaHkgSnVuY3Rpb25aESIPdHJpY2h5IGp1bmN0aW9ukgEQcmFpbHdheV9zZXJ2aWNlc5oBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOak9HTkxUM0YzUlJBQuABAA!16s%2Fg%2F11c5xvx6r0?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/tirichy.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Trichy</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/hosur+railway+station/@12.7177471,77.820351,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/hosur.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Hosur</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/Tiruchendure+railway+station/@8.5027746,78.1148056,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/tiru.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Tiruchendur</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/kolkata+railway+station/@22.5873199,88.3636424,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/kolkata.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Kolkata</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/villupuram+railway+station/@11.9418644,79.4967723,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/villupuram.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Villupuram</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/delhi+railway+station/@28.6428027,77.1214845,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/delhi.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Delhi</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/hyderabad+railway+station/@21.2782789,68.170998,6z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/hyd.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Hydrabad</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/kannayakumari+railway+station/@8.0879644,77.5435173,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/kan.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Kanyakumari</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/rameshwaram+railway+station/@9.2818566,79.305585,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/ram.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Rameshwaram</p>
+        </div>
+        <div class="image-card" data-title="Image 5">
+            <a href="https://www.google.co.in/maps/search/kochi+railway+station/@9.9987014,76.2690101,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">
+                <img src="./images/kochi.jpeg" alt="Image 5">
+            </a>
+            <p class="image-title">Kochi</p>
+        </div>
+
+        <!-- Add more image cards as needed -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
